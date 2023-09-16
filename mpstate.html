@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/jstable.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    h1{
+align-items: center;
+    }
+    
+
+    table{
+        background-color: cadetblue;
+        text-align: center;
+        
+        
+        
+    }
+
+    th{
+        padding: 8px;
+        background-color: rgb(228, 218, 25);
+    }
+
+    td{
+        padding: 8px;
+        background-color: aquamarine;
+    }
+</style></head>
+
+<body>
+    
+    <h1>MP STATE</h1>
+    <table>
+        <tbody><tr>
+            <th>Id</th>
+            <th>Cityname</th>
+            <th>Population</th>
+            
+        </tr>
+    
+        <tr>
+            <td id="demo1">1</td>
+            <td id="demo2">Bhopal</td>
+            <td id="demo3">3m</td>
+        </tr>
+    
+        <tr>
+            <td id="demo4">2</td>
+            <td id="demo5">INDORE</td>
+            <td id="demo6">2m</td>
+        </tr>
+        <tr>
+            <td id="demo7">3</td>
+            <td id="demo8">Dewas</td>
+            <td id="demo9">1.5</td>
+        </tr>
+        <tr>
+            <td id="demo10">4</td>
+            <td id="demo11">Mandsour</td>
+            <td id="demo12">4m</td>
+        </tr>
+        <tr>
+            <td id="demo13">5</td>
+            <td id="demo14">Agar Malva</td>
+            <td id="demo15">1m</td>
+        </tr>
+        <tr>
+            <td id="demo16">6</td>
+            <td id="demo17">Neemuch</td>
+            <td id="demo18">2m</td>
+        </tr>
+        <tr>
+            <td id="demo19">7</td>
+            <td id="demo20">Ratlam</td>
+            <td id="demo21">6m</td>
+        </tr>
+        <tr>
+            <td id="demo22">8</td>
+            <td id="demo23">Dhar</td>
+            <td id="demo24">7m</td>
+        </tr>
+        <tr>
+            <td id="demo25">9</td>
+            <td id="demo26">Ujjain</td>
+            <td id="demo27">8m</td>
+        </tr>
+        <tr>
+            <td id="demo28">10</td>
+            <td id="demo29">Harda</td>
+            <td id="demo30">10m</td>
+        </tr>
+    
+     </tbody></table>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script>
+    const State = [{id:1,cityname:"Bhopal",population:"3m"},
+    {id:2,cityname:"INDORE",population:"2m"},{id:3,cityname:"Dewas", population:"1.5"},
+    {id:4,cityname:"Mandsour",population:"4m"}, {id:5,cityname:"Agar Malva",population:"1m"},
+    {id:6,cityname:"Neemuch",population:"2m"},{id:7,cityname:"Ratlam",population:"6m"},
+    {id:8,cityname:"Dhar",population:"7m"},{id:9,cityname:"Ujjain",population:"8m"},
+    {id:10,cityname:"Harda",population:"10m"}
+]
+
+
+    document.getElementById("demo1").innerHTML=State[0]["id"]
+    document.getElementById("demo2").innerHTML=State[0]["cityname"]
+    document.getElementById("demo3").innerHTML=State[0]["population"]
+    document.getElementById("demo4").innerHTML=State[1]["id"]
+    document.getElementById("demo5").innerHTML=State[1]["cityname"]
+    document.getElementById("demo6").innerHTML=State[1]["population"]
+    document.getElementById("demo7").innerHTML=State[2]["id"]
+    document.getElementById("demo8").innerHTML=State[2]["cityname"]
+    document.getElementById("demo9").innerHTML=State[2]["population"]
+    document.getElementById("demo10").innerHTML=State[3]["id"]
+    document.getElementById("demo11").innerHTML=State[3]["cityname"]
+    document.getElementById("demo12").innerHTML=State[3]["population"]
+    document.getElementById("demo13").innerHTML=State[4]["id"]
+    document.getElementById("demo14").innerHTML=State[4]["cityname"]
+    document.getElementById("demo15").innerHTML=State[4]["population"]
+    document.getElementById("demo16").innerHTML=State[5]["id"]
+    document.getElementById("demo17").innerHTML=State[5]["cityname"]
+    document.getElementById("demo18").innerHTML=State[5]["population"]
+    document.getElementById("demo19").innerHTML=State[6]["id"]
+    document.getElementById("demo20").innerHTML=State[6]["cityname"]
+    document.getElementById("demo21").innerHTML=State[6]["population"]
+    document.getElementById("demo22").innerHTML=State[7]["id"]
+    document.getElementById("demo23").innerHTML=State[7]["cityname"]
+    document.getElementById("demo24").innerHTML=State[7]["population"]
+    document.getElementById("demo25").innerHTML=State[8]["id"]
+    document.getElementById("demo26").innerHTML=State[8]["cityname"]
+    document.getElementById("demo27").innerHTML=State[8]["population"]
+    document.getElementById("demo28").innerHTML=State[9]["id"]
+    document.getElementById("demo29").innerHTML=State[9]["cityname"]
+    document.getElementById("demo30").innerHTML=State[9]["population"]
+    
+
+</script>
+</body></html>
